@@ -1,0 +1,10 @@
+.button {
+  display: inline-flex;
+  border: none;
+  font: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}

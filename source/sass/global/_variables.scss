@@ -1,0 +1,26 @@
+$default-font: "PT Mono", "Arial", sans-serif;
+$secondary-font: "Roboto Condensed", "Arial", sans-serif;
+
+$mercury: #e5e5e5;
+$dove-gray: #666666;
+$cable-green: #1b2d37;
+$dodger-blue: #00b2ff;
+$white: #ffffff;
+
+$text-color: $dove-gray;
+$text-color-inverse: $white;
+$text-color-secondary: rgba($cable-green, 0.5);
+$accent-color: $dodger-blue;
+
+$bg-main-color: $mercury;
+$bg-color-secondary: $cable-green;
+
+$button-accent-color: $dodger-blue;
+
+$border-radius: 5px;
+$transition-duration: 150ms;
+
+$tablet: 1023px;
+$mobile: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

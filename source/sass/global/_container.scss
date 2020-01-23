@@ -1,0 +1,13 @@
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @include respond-below($tablet) {
+    padding: 0 25px;
+  }
+
+  @include respond-below($mobile) {
+    padding: 0 15px;
+  }
+}
