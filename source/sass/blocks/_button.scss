@@ -1,10 +1,61 @@
 .button {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  font: inherit;
-  text-transform: uppercase;
+  padding: 0;
+  font-family: $secondary-font;
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: $border-radius;
+  transition: background-color $transition-duration, color $transition-duration, opacity $transition-duration;
+
+  &--primary {
+    width: 100%;
+    max-width: 180px;
+    padding: 14px 15px 12px;
+    color: $text-color-inverse;
+    border: 1px solid $text-color-inverse;
+
+    &:hover,
+    &:focus {
+      color: rgba($text-color-inverse, 0.8);
+      border: 1px solid rgba($text-color-inverse, 0.8);
+    }
+
+    &:active {
+      color: rgba($text-color-inverse, 0.6);
+      border: 1px solid rgba($text-color-inverse, 0.6);
+    }
+  }
+
+  &--primary-colored {
+    color: $button-accent-color;
+    border: 1px solid $button-accent-color;
+
+    &:hover,
+    &:focus {
+      color: transparent;
+      background-color: $button-accent-color;
+    }
+
+    &:active {
+      background-color: rgba($button-accent-color, 0.7);
+    }
+  }
+
+  &--secondary {
+    padding: 17px 28px 14px;
+    width: 100%;
+    max-width: 407px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

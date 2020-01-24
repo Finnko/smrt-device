@@ -30,7 +30,11 @@ img {
   height: auto;
 }
 
-.wrapper {
+a {
+  transition: color $transition-duration;
+}
+
+.page-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;

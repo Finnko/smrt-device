@@ -11,16 +11,71 @@
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
-<header class="header">
-  <div class="header__container container">
-    <div class="header__wrap">
-      <a class="header__log">
-        <img src="img/logo.svg" width="202" height="52" alt="Логотип компании Smart Device">
-      </a>
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+<div class="header-wrapper">
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__wrap">
+        <a class="header__logo">
+          <img src="img/logo.svg" width="202" height="52" alt="Логотип компании Smart Device">
+        </a>
+        <button class="header__toggle button" type="button" aria-label="Кнопка открыть/закрыть меню">
+          <svg width="37" height="13">
+            <use xlink:href="#icon-menu-toggle"></use>
+          </svg>
+        </button>
+        <ul class="header__contacts">
+          <li class="header__contacts-item">
+            <a class="header__link" href="mailto:info@sd.ru">
+              <span class="header__link-icon">
+                <svg width="19" height="14">
+                  <use xlink:href="#icon-envelope"></use>
+                </svg>
+              </span>
+              <span class="header__link-text">
+                info@sd.ru
+              </span>
+            </a>
+          </li>
+          <li class="header__contacts-item">
+            <a class="header__link" href="tel:+74950005252">
+              <span class="header__link-icon">
+                <svg width="19" height="14">
+                  <use xlink:href="#icon-phone-call"></use>
+                </svg>
+              </span>
+              <span class="header__link-text">
+                +7 (495) 000 52 52
+              </span>
+            </a>
+          </li>
+        </ul>
+        <a class="header__button button button--primary" href="#">
+          Заказать звонок
+        </a>
+      </div>
     </div>
-  </div>
-</header>
-<div class="wrapper">
+  </header>
+  <section class="hero">
+    <div class="hero__container container">
+      <h1 class="visually-hidden">Smart Device - магазин умных технологий</h1>
+      <div class="hero__offer">
+        <h2 class="hero__title">
+          Печатные платы
+        </h2>
+        <p class="hero__text">
+          производство и монтаж, поставка комплектующих, блоков и модулей
+        </p>
+        <a class="hero__button button button--secondary" href="#">
+          Получить бесплатную консультацию
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="page-wrapper">
   <main class="main">
     <div class="container"></div>
   </main>

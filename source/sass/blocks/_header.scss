@@ -1,0 +1,77 @@
+.header-wrapper {
+  background-color: $cable-green;
+  background-image: url("../img/header-bg-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/header-bg-desktop@2x.jpg");
+  }
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 33px;
+}
+
+.header__logo {
+  margin-right: 118px;
+}
+
+.header__toggle {
+  color: $text-color-inverse;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.header__contacts {
+  @include list-resetted;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+  max-width: 440px;
+}
+
+.header__contacts-item {
+  &:not(:last-child) {
+    margin-right: 88px;
+  }
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  color: $text-color-inverse;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+
+    .header__link-icon {
+      color: $text-color-inverse;
+    }
+  }
+}
+
+.header__link-icon {
+  color: $accent-color;
+}
+
+.header__link-icon + .header__link-text {
+  margin-left: 19px;
+}
+
+.header__button {
+  margin-left: 38px;
+}

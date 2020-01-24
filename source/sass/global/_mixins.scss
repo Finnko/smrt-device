@@ -1,23 +1,22 @@
-@mixin list-resetyed {
+@mixin list-resetted {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+@mixin text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @mixin respond-below($breakpoint) {
-  @media (min-width: $breakpoint) {
+  @media (max-width: $breakpoint) {
     @content;
   }
 }
 
 @mixin respond-between($lower-breakpoint, $upper-breakpoint) {
   @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
-    @content;
-  }
-}
-
-@mixin retina-display($retina-dpi, $retina-dppx) {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
   }
 }
