@@ -9,6 +9,10 @@
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" crossorigin="anonymous">
+  <script src="js/picturefill.js"></script>
+  <script>
+    document.createElement("picture");
+  </script>
 </head>
 <body>
 <div style="display: none;">
@@ -19,7 +23,16 @@
     <div class="header__container container">
       <div class="header__wrap">
         <a class="header__logo">
-          <img src="img/logo.svg" width="202" height="52" alt="Логотип компании Smart Device">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/logo-mobile@1x.png 1x, img/logo-mobile@2x.png 2x">
+            <img class="header__logo-image"
+                 src="img/logo-desktop@1x.png"
+                 srcset="img/logo-desktop@2x.png 2x"
+                 width="202"
+                 height="52"
+                 alt="Логотип магазина Smart Device"
+            >
+          </picture>
         </a>
         <button class="header__toggle button" type="button" aria-label="Кнопка открыть/закрыть меню">
           <svg width="37" height="13">
@@ -69,9 +82,15 @@
           производство и монтаж, поставка комплектующих, блоков и модулей
         </p>
         <a class="hero__button button button--secondary" href="#">
-          Получить бесплатную консультацию
+          <span class="hero__button-text">
+            Получить бесплатную консультацию
+          </span>
+          <span class="hero__button-text hero__button-text--mobile">
+            Бесплатная консультация
+          </span>
         </a>
       </div>
+      <a href="#">Скролл вниз</a>
     </div>
   </section>
 </div>

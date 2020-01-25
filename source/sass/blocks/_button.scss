@@ -57,5 +57,17 @@
     max-width: 407px;
     font-size: 16px;
     line-height: 19px;
+    color: $text-color-inverse;
+    background-color: $button-accent-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: $text-color-inverse;
+    }
+
+    &:active {
+      color: rgba($accent-color, 0.8);
+    }
   }
 }
