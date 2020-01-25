@@ -31,7 +31,7 @@ img {
 }
 
 a {
-  transition: color $transition-duration;
+  transition: color $transition-duration, border $transition-duration;
 }
 
 .page-wrapper {

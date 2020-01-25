@@ -1,0 +1,25 @@
+.social {
+  @include list-resetted;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+.social__item {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.social__link {
+  transition: opacity $transition-duration;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
