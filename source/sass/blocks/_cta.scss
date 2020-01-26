@@ -1,0 +1,219 @@
+.cta {
+  padding: 96px 0 83px;
+  background-color: $accent-color;
+  background-image: url("../img/plane-desktop@1x.png"), url("../img/cta-big-triangles.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(50% - 350px) 40%, calc(50% - 450px) -60px;
+  background-size: 511px 288px, 670px 641px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/plane-desktop@2x.png"), url("../img/cta-big-triangles.svg");
+  }
+}
+
+.cta__wrap {
+  padding: 0 120px;
+}
+
+.cta__content {
+  margin-left: auto;
+  width: calc(50% - 15px);
+  color: $text-color-inverse;
+}
+
+.cta__title {
+  @include h2-heading;
+  @include text-margin-0;
+  margin-bottom: 7px;
+}
+
+.cta__subtitle {
+  @include text-margin-0;
+  margin-bottom: 49px;
+}
+
+.cta__form-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta__field {
+  width: calc(50% - 15px);
+  margin-bottom: 40px;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
+
+  &:last-of-type {
+    margin-bottom: 43px;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    border: none;
+    font: inherit;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    padding: 13px 16px 15px;
+    color: $text-color-inverse;
+    background-color: rgba($text-color-inverse, 0.1);
+    transition: box-shadow $transition-duration;
+
+    &::placeholder {
+      color: $text-color-inverse;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 0 1px rgba($text-color-inverse, 0.6);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px $text-color-inverse;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 154px;
+    resize: none;
+  }
+}
+
+.cta__box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cta__button {
+  max-width: 270px;
+  flex-shrink: 0;
+  margin-right: 38px;
+  margin-bottom: 30px;
+}
+
+.cta__checkbox {
+  padding-left: 32px;
+
+  label {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 230px;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba($text-color-inverse, 0.8);
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: -32px;
+      top: 0;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $text-color-inverse;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 8px 5px;
+      transition: border $transition-duration;
+    }
+  }
+
+  input:hover + label::before,
+  input:focus + label::before {
+    border: 1px solid rgba($text-color-inverse, 0.6);
+  }
+
+  input:active + label::before {
+    border: 1px solid rgba($text-color-inverse, 0.4);
+  }
+
+  input:checked + label::before {
+    background-image: url("../img/tick.svg");
+  }
+
+  a {
+    position: relative;
+    color: rgba($text-color-inverse, 0.8);
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      transition: background-color $transition-duration;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        background-color: rgba($text-color-inverse, 0.8);
+      }
+    }
+
+    &:active {
+      &::after {
+        background-color: rgba($text-color-inverse, 0.6);
+      }
+    }
+  }
+}
+
+@include respond-below($tablet) {
+  .cta {
+    padding: 83px 0 73px;
+    background-image: none;
+  }
+
+  .cta__wrap {
+    padding: 0 65px;
+  }
+
+  .cta__content {
+    width: 100%;
+  }
+}
+
+@include respond-below($mobile) {
+  .cta {
+    padding: 33px 0 41px;
+  }
+
+  .cta__field {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
+  .cta__wrap {
+    padding: 0;
+  }
+
+  .cta__title {
+    margin-bottom: 15px;
+  }
+
+  .cta__subtitle {
+    margin-bottom: 25px;
+  }
+
+  .cta__button {
+    max-width: none;
+  }
+}

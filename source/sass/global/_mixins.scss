@@ -9,6 +9,23 @@
   margin-bottom: 0;
 }
 
+@mixin h2-heading {
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  font-family: $secondary-font;
+
+  @include respond-below($tablet) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @include respond-below($mobile) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
 @mixin respond-below($breakpoint) {
   @media (max-width: $breakpoint) {
     @content;

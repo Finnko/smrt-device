@@ -96,7 +96,50 @@
 </div>
 <div class="page-wrapper">
   <main class="main">
-    <div class="container"></div>
+    <section class="cta">
+      <div class="cta__container container">
+        <div class="cta__wrap">
+          <div class="cta__content">
+            <h2 class="cta__title">
+              Остались вопросы? Задайте их&nbsp;нам!
+            </h2>
+            <p class="cta__subtitle">
+              Мы проконсультируем Вас бесплатно
+            </p>
+            <form class="cta__form" action="#" >
+              <div class="cta__form-content">
+                <div class="cta__field">
+                  <input id="user-name" type="text" placeholder="Имя" required>
+                  <label for="user-name"></label>
+                </div>
+                <div class="cta__field">
+                  <input id="user-phone" type="tel" placeholder="Телефон" required>
+                  <label for="user-phone"></label>
+                </div>
+                <div class="cta__field cta__field--full-width">
+                  <textarea id="user-message" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                  <label for="user-message"></label>
+                </div>
+                <div class="cta__box">
+                  <button class="cta__button button button--primary" type="submit">
+                    Задать вопрос
+                  </button>
+                  <div class="cta__checkbox">
+                    <input class="visually-hidden" type="checkbox" id="consent" required>
+                    <label for="consent">
+                      Я согласен на обработку
+                      <a href="#" target="_blank">
+                        персональных данных
+                      </a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer__top">
