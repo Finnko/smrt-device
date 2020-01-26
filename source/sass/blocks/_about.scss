@@ -1,0 +1,70 @@
+.about {
+  padding-bottom: 110px;
+  background-repeat: no-repeat;
+  //background-image: url("../img/year-desktop@1x.png");
+  background-position: 30% top;
+  background-size: 164px 317px;
+
+  //@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  //  background-image: url("../img/year-desktop@2x.png");
+  //}
+}
+
+.about__wrap {
+  padding: 0 120px;
+}
+
+.about__content {
+  padding-left: 185px;
+}
+
+.about__content h2 {
+  @include h2-heading;
+  @include text-margin-0;
+  margin-bottom: 18px;
+}
+
+.about__content p {
+  @include text-margin-0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+}
+
+.about__button {
+  margin-top: 35px;
+}
+
+@include respond-below($tablet) {
+  .about {
+    padding-bottom: 83px;
+  }
+
+  .about__wrap {
+    padding: 0;
+  }
+
+  .about__content h2 {
+    margin-bottom: 25px;
+  }
+
+  .about__button {
+    margin-top: 50px;
+  }
+}
+
+@include respond-below($mobile) {
+  .about {
+    padding-bottom: 65px;
+    background-image: none;
+  }
+
+  .about__content {
+    padding-left: 0;
+  }
+
+  .about__content h2 {
+    margin-bottom: 18px;
+  }
+}

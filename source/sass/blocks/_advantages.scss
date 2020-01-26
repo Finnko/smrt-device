@@ -61,6 +61,10 @@
 }
 
 @include respond-below($tablet) {
+  .advantages {
+    padding: 54px 0 60px;
+  }
+
   .advantages__wrap {
     padding: 0;
   }
@@ -83,6 +87,10 @@
 }
 
 @include respond-below($mobile) {
+  .advantages {
+    padding: 37px 0 60px;
+  }
+
   .advantages__item {
     width: 100%;
   }

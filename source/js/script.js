@@ -35,4 +35,3 @@ if (footerInfoToggles) {
     item.addEventListener('click', footerInfoClickHandler);
   });
 }
-

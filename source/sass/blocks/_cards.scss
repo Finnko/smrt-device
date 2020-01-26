@@ -5,7 +5,7 @@
   flex-wrap: wrap;
 }
 
-.cards__item {
+.cards li {
   width: calc(100% / 3 - 30px);
   margin: 15px;
   min-height: 620px;
@@ -38,7 +38,7 @@
   }
 }
 
-.cards__inner {
+.cards a {
   position: relative;
   display: block;
   height: 100%;
@@ -74,14 +74,14 @@
   }
 }
 
-.cards__title {
+.cards h4 {
   @include text-margin-0;
   max-width: 200px;
   font-weight: 400;
 }
 
 @include respond-below($tablet) {
-  .cards__item {
+  .cards li {
     width: 100%;
     min-height: 256px;
 
@@ -112,7 +112,7 @@
 }
 
 @include respond-below($mobile) {
-  .cards__item {
+  .cards li {
     &:first-child {
       background-image: url("../img/service-item-1-mobile@1x.png");
 
