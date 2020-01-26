@@ -1,0 +1,140 @@
+.cards {
+  @include list-resetted;
+  margin: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards__item {
+  width: calc(100% / 3 - 30px);
+  margin: 15px;
+  min-height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:first-child {
+    background-image: url("../img/service-item-1-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-item-1-desktop@2x.png");
+    }
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/service-item-2-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-item-2-desktop@2x.png");
+    }
+  }
+
+  &:last-child {
+    background-image: url("../img/service-item-3-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-item-3-desktop@2x.png");
+    }
+  }
+}
+
+.cards__inner {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 53px 44px;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: $text-color-inverse;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $accent-color;
+    background-image: url("../img/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    transition: background-color $transition-duration, opacity $transition-duration;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: rgba($accent-color, 0.8);
+  }
+
+  &:active::after {
+    background-color: rgba($accent-color, 0.6);
+    opacity: 0.6;
+  }
+}
+
+.cards__title {
+  @include text-margin-0;
+  max-width: 200px;
+  font-weight: 400;
+}
+
+@include respond-below($tablet) {
+  .cards__item {
+    width: 100%;
+    min-height: 256px;
+
+    &:first-child {
+      background-image: url("../img/service-item-1-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-1-tablet@2x.png");
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/service-item-2-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-2-tablet@2x.png");
+      }
+    }
+
+    &:last-child {
+      background-image: url("../img/service-item-3-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-3-tablet@2x.png");
+      }
+    }
+  }
+}
+
+@include respond-below($mobile) {
+  .cards__item {
+    &:first-child {
+      background-image: url("../img/service-item-1-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-1-mobile@2x.png");
+      }
+    }
+
+    &:nth-child(2) {
+      background-image: url("../img/service-item-2-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-2-mobile@2x.png");
+      }
+    }
+
+    &:last-child {
+      background-image: url("../img/service-item-3-mobile@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/service-item-3-mobile@2x.png");
+      }
+    }
+  }
+}

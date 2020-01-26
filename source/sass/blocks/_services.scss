@@ -1,0 +1,34 @@
+.services {
+  padding: 93px 0 127px;
+  background-color: $cable-green;
+}
+
+.services__wrap {
+  padding: 0 120px;
+}
+
+.services__title {
+  @include h2-heading;
+  margin-bottom: 47px;
+  color: $text-color-inverse;
+}
+
+@include respond-below($tablet) {
+  .services {
+    padding: 53px 0 78px;
+  }
+
+  .services__wrap {
+    padding: 0;
+  }
+}
+
+@include respond-below($mobile) {
+  .services {
+    padding: 53px 0 64px;
+  }
+
+  .services__title {
+    margin-bottom: 37px;
+  }
+}
