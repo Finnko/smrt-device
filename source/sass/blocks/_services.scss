@@ -8,7 +8,7 @@
 }
 
 .services__title {
-  @include h2-heading;
+  @include heading-large;
   margin-bottom: 47px;
   color: $text-color-inverse;
 }

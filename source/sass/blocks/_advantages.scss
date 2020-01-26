@@ -50,7 +50,7 @@
 }
 
 .advantages__title {
-  @include h3-heading;
+  @include heading-medium;
   @include text-margin-0;
   margin-bottom: 15px;
 }

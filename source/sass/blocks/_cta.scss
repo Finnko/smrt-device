@@ -22,7 +22,7 @@
 }
 
 .cta__title {
-  @include h2-heading;
+  @include heading-large;
   @include text-margin-0;
   margin-bottom: 7px;
 }

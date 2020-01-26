@@ -1,13 +1,5 @@
 .about {
   padding-bottom: 110px;
-  background-repeat: no-repeat;
-  //background-image: url("../img/year-desktop@1x.png");
-  background-position: 30% top;
-  background-size: 164px 317px;
-
-  //@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  //  background-image: url("../img/year-desktop@2x.png");
-  //}
 }
 
 .about__wrap {
@@ -19,7 +11,7 @@
 }
 
 .about__content h2 {
-  @include h2-heading;
+  @include heading-large;
   @include text-margin-0;
   margin-bottom: 18px;
 }
