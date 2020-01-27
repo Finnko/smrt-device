@@ -33,7 +33,8 @@
     background-color: $accent-color;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $text-color-inverse;
     background-color: $accent-color;
 
