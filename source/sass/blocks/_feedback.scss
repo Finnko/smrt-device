@@ -1,9 +1,9 @@
 .feedback {
-  padding: 96px 0 83px;
+  padding: 91px 0 81px;
   background-color: $accent-color;
   background-image: url("../img/plane-desktop@1x.png"), url("../img/feedback-big-triangles.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: calc(50% - 350px) 40%, calc(50% - 450px) -60px;
+  background-position: calc(50% - 353px) 42%, calc(50% - 450px) -60px;
   background-size: 511px 288px, 670px 641px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -13,19 +13,19 @@
 
 .feedback__content {
   margin-left: auto;
-  width: calc(47% - 15px);
+  width: calc(50% - 15px);
   color: $text-color-inverse;
 }
 
 .feedback h2 {
   @include heading-large;
   @include text-margin-0;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
 }
 
 .feedback p {
   @include text-margin-0;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
 }
 
 .feedback form {

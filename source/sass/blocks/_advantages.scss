@@ -1,5 +1,5 @@
 .advantages {
-  padding: 109px 0 70px;
+  padding: 112px 0 70px;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
@@ -9,9 +9,11 @@
   position: relative;
   width: calc(100% / 2 - 30px);
   margin: 15px;
-  padding: 40px 42px 49px 45px;
+  padding: 40px 42px 67px 45px;
+  min-height: 300px;
   border: 1px solid $gallery;
   color: $accent-color;
+  background-color: $text-color-inverse;
   cursor: pointer;
   transition: background-color $transition-duration, color $transition-duration;
 
@@ -50,7 +52,7 @@
 .advantages__icon {
   display: inline-block;
   vertical-align: top;
-  margin-bottom: 23px;
+  margin-bottom: 13px;
 }
 
 @include respond-below($tablet) {

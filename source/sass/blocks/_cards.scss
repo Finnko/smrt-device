@@ -45,7 +45,8 @@
   position: relative;
   display: block;
   height: 100%;
-  padding: 53px 44px;
+  padding: 52px 45px;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
   text-decoration: none;
@@ -79,7 +80,7 @@
 
 .cards h4 {
   @include text-margin-0;
-  max-width: 200px;
+  max-width: 170px;
   font-weight: 400;
 }
 

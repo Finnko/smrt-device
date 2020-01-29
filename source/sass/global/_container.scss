@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   &--bigger-padding {
-    padding: 0 120px;
+    padding: 0 160px;
   }
 
   @include respond-below($tablet) {

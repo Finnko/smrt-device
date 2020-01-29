@@ -1,12 +1,12 @@
 .services {
-  padding: 93px 0 127px;
+  padding: 88px 0 128px;
   background-color: $bg-color-primary;
 }
 
 .services h2 {
   @include heading-large;
   @include text-margin-0;
-  margin-bottom: 47px;
+  margin-bottom: 51px;
   color: $text-color-inverse;
 }
 

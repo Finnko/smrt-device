@@ -7,7 +7,7 @@
   }
 
   &:last-of-type {
-    margin-bottom: 43px;
+    margin-bottom: 39px;
   }
 
   &--full-width {
@@ -21,7 +21,7 @@
     outline: none;
     appearance: none;
     width: 100%;
-    padding: 13px 16px 15px;
+    padding: 13px 18px 15px;
     color: $text-color-inverse;
     background-color: rgba($text-color-inverse, 0.1);
     transition: box-shadow $transition-duration;
@@ -58,7 +58,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    max-width: calc(50% - 19px);
+    max-width: calc(49% - 19px);
     padding-left: 32px;
     font-size: 14px;
     line-height: 16px;
@@ -95,7 +95,7 @@
 }
 
 .form__button {
-  max-width: calc(50% - 19px);
+  max-width: calc(51% - 19px);
   margin-bottom: 30px;
   margin-right: 38px;
 }

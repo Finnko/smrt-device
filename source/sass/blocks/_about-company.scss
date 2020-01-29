@@ -1,0 +1,11 @@
+.about-company {
+  overflow: hidden;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-image:
+    url("../img/about-center-triangle.svg"),
+    url("../img/about-small-polygon.svg"),
+    url("../img/about-polygon-big.svg"),
+    url("../img/about-left-polygon.svg");
+  background-position: 58% 48%, 108% 42%, -12% 115%, 5% 5%;
+  background-size: 559px 486px, 340px, 580px, 340px;
+}

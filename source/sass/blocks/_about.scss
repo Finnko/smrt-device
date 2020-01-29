@@ -1,21 +1,29 @@
 .about {
-  padding-top: 40px;
+  padding-top: 33px;
   padding-bottom: 110px;
-  padding-left: 185px;
+  padding-left: 183px;
+  background-repeat: no-repeat;
+  background-position: -28px 38px;
+  background-image: url("../img/year-desktop@1x.png");
+  background-size: 164px 317px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/year-desktop@2x.png");
+  }
 }
 
 .about h2 {
   @include heading-large;
   @include text-margin-0;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 }
 
 .about p {
   @include text-margin-0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 
   &:last-of-type {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 }
 

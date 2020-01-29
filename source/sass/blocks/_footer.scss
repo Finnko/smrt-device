@@ -5,7 +5,7 @@
 
 .footer__top {
   padding-top: 65px;
-  padding-bottom: 55px;
+  padding-bottom: 57px;
   display: flex;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .footer__social {
-  margin-top: 54px;
+  margin-top: 47px;
 }
 
 .footer__item-logo p {
@@ -28,6 +28,7 @@
   border-top: 1px solid rgba($corduroy, 0.2);
   font-size: 13px;
   line-height: 24px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .footer__copyright span + span {
-  margin-left: 72px;
+  margin-left: 74px;
   margin-right: 142px;
 }
 
