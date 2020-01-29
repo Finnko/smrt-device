@@ -1,18 +1,15 @@
-.hero {
-  padding-top: 231px;
+.promo {
+  padding-top: 196px;
   padding-bottom: 278px;
 }
 
-.hero__container {
+.promo__offer {
   position: relative;
-}
-
-.hero__offer {
   width: 50%;
   color: $text-color-inverse;
 }
 
-.hero__slogan {
+.promo__slogan {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 31px;
@@ -24,11 +21,11 @@
   line-height: 94px;
 }
 
-.hero__wrap {
+.promo__wrap {
   padding-left: 98px;
 }
 
-.hero__text {
+.promo p {
   @include text-margin-0;
   position: relative;
   margin-bottom: 37px;
@@ -46,15 +43,15 @@
   }
 }
 
-.hero__button-text {
+.promo__button-text {
   &--mobile {
     display: none;
   }
 }
 
-.hero__move-link {
+.promo__move-link {
   position: absolute;
-  left: 0;
+  left: -35px;
   bottom: -148px;
   font-size: 14px;
   line-height: 16px;
@@ -74,26 +71,26 @@
 }
 
 @include respond-below($tablet) {
-  .hero {
-    padding-top: 116px;
+  .promo {
+    padding-top: 81px;
     padding-bottom: 163px;
   }
 
-  .hero__offer {
+  .promo__offer {
     width: 65%;
     padding-left: 63px;
   }
 
-  .hero__wrap {
+  .promo__wrap {
     padding-left: 48px;
   }
 
-  .hero__slogan {
+  .promo__slogan {
     font-size: 60px;
     line-height: 70px;
   }
 
-  .hero__text {
+  .promo p {
     font-size: 18px;
     line-height: 28px;
 
@@ -104,38 +101,38 @@
     }
   }
 
-  .hero__button {
+  .promo__button {
     max-width: 351px;
     padding-left: 14px;
     padding-right: 14px;
   }
 
-  .hero__move-link {
+  .promo__move-link {
     display: none;
   }
 }
 
 @include respond-below($mobile) {
-  .hero {
-    padding-top: 231px;
+  .promo {
+    padding-top: 196px;
     padding-bottom: 70px;
   }
 
-  .hero__offer {
+  .promo__offer {
     width: 100%;
     padding-left: 0;
   }
 
-  .hero__wrap {
+  .promo__wrap {
     padding-left: 0;
   }
 
-  .hero__slogan {
+  .promo__slogan {
     font-size: 40px;
     line-height: 47px;
   }
 
-  .hero__text {
+  .promo p {
     padding-left: 48px;
     margin-bottom: 42px;
     font-size: 16px;
@@ -146,11 +143,11 @@
     }
   }
 
-  .hero__button {
+  .promo__button {
     max-width: none;
   }
 
-  .hero__button-text {
+  .promo__button-text {
     display: none;
 
     &--mobile {

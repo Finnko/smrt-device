@@ -12,8 +12,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba($text-color, 0.3);
+}
 
-  &:first-child {
+.cards__item {
+  &--production {
     background-image: url("../img/service-item-1-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -21,7 +24,7 @@
     }
   }
 
-  &:nth-child(2) {
+  &--installation {
     background-image: url("../img/service-item-2-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -29,7 +32,7 @@
     }
   }
 
-  &:last-child {
+  &--components {
     background-image: url("../img/service-item-3-desktop@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -84,8 +87,10 @@
   .cards li {
     width: 100%;
     min-height: 256px;
+  }
 
-    &:first-child {
+  .cards__item {
+    &--production {
       background-image: url("../img/service-item-1-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -93,7 +98,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &--installation {
       background-image: url("../img/service-item-2-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -101,7 +106,7 @@
       }
     }
 
-    &:last-child {
+    &--components {
       background-image: url("../img/service-item-3-tablet@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -112,8 +117,8 @@
 }
 
 @include respond-below($mobile) {
-  .cards li {
-    &:first-child {
+  .cards__item {
+    &--production {
       background-image: url("../img/service-item-1-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -121,7 +126,7 @@
       }
     }
 
-    &:nth-child(2) {
+    &--installation {
       background-image: url("../img/service-item-2-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -129,7 +134,7 @@
       }
     }
 
-    &:last-child {
+    &--components {
       background-image: url("../img/service-item-3-mobile@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

@@ -19,7 +19,7 @@
   }
 }
 
-.contacts__title {
+.contacts h5 {
   @include text-margin-0;
   margin-bottom: 29px;
   font-family: $secondary-font;
@@ -109,7 +109,7 @@
     display: block;
 
     .contacts__list-item:nth-child(odd) {
-      width: initial;
+      width: auto;
     }
 
     .contacts__list-item:nth-child(even) {
@@ -117,7 +117,7 @@
     }
   }
 
-  .contacts__title {
+  .contacts h5 {
     margin-bottom: 26px;
   }
 }
@@ -141,14 +141,14 @@
         display: block;
       }
 
-      .contacts__title::after {
+      h5::after {
         background-image: url("../img/minus.svg");
         background-size: 16px 3px;
       }
     }
   }
 
-  .contacts__title {
+  .contacts h5 {
     position: relative;
     cursor: pointer;
     margin-bottom: 0;
@@ -176,6 +176,21 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: 16px;
+    }
+  }
+
+  .contacts__item {
+    width: 100%;
+
+    &--open {
+      .contacts__body {
+        display: block;
+      }
+
+      h5::after {
+        background-image: url("../img/minus.svg");
+        background-size: 16px 3px;
+      }
     }
   }
 

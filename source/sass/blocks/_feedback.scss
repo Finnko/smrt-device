@@ -1,66 +1,64 @@
-.cta {
+.feedback {
   padding: 96px 0 83px;
   background-color: $accent-color;
-  background-image: url("../img/plane-desktop@1x.png"), url("../img/cta-big-triangles.svg");
+  background-image: url("../img/plane-desktop@1x.png"), url("../img/feedback-big-triangles.svg");
   background-repeat: no-repeat, no-repeat;
   background-position: calc(50% - 350px) 40%, calc(50% - 450px) -60px;
   background-size: 511px 288px, 670px 641px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/plane-desktop@2x.png"), url("../img/cta-big-triangles.svg");
+    background-image: url("../img/plane-desktop@2x.png"), url("../img/feedback-big-triangles.svg");
   }
 }
 
-.cta__wrap {
-  padding: 0 120px;
-}
-
-.cta__content {
+.feedback__content {
   margin-left: auto;
-  width: calc(50% - 15px);
+  width: calc(47% - 15px);
   color: $text-color-inverse;
 }
 
-.cta__title {
+.feedback h2 {
   @include heading-large;
   @include text-margin-0;
   margin-bottom: 7px;
 }
 
-.cta__subtitle {
+.feedback p {
   @include text-margin-0;
   margin-bottom: 49px;
 }
 
+.feedback form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @include respond-below($tablet) {
-  .cta {
+  .feedback {
     padding: 83px 0 73px;
     background-image: none;
   }
 
-  .cta__wrap {
+  .feedback__content {
     padding: 0 65px;
-  }
-
-  .cta__content {
     width: 100%;
   }
 }
 
 @include respond-below($mobile) {
-  .cta {
+  .feedback {
     padding: 33px 0 41px;
   }
 
-  .cta__wrap {
+  .feedback__content {
     padding: 0;
   }
 
-  .cta__title {
+  .feedback h2 {
     margin-bottom: 15px;
   }
 
-  .cta__subtitle {
+  .feedback p {
     margin-bottom: 25px;
   }
 }

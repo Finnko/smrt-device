@@ -2,10 +2,14 @@
 
 var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
+var SCROLL_DURATION = 1500;
+var TABLET_MEDIA_QUERY = '(max-width: 1023px)';
 
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
-var footerInfoToggles = document.querySelectorAll('.contacts__title');
+var footerInfoToggles = document.querySelectorAll('.contacts h5');
+var footerTextCopyright = document.querySelector('.js-text-copyright');
+var footerCopyrightContainer = document.querySelector('.footer__item-logo');
 var modalDialog = document.querySelector('.modal');
 var overlay = modalDialog.querySelector('.modal__overlay');
 var openButton = document.querySelector('.header__button');
@@ -14,6 +18,7 @@ var form = modalDialog.querySelector('.modal__form');
 var login = form.querySelector('#user-name1');
 var phone = form.querySelector('#user-phone1');
 var message = form.querySelector('#user-message1');
+
 
 var isStorageSupport = true;
 var storage = '';
@@ -58,6 +63,8 @@ var closeModal = function () {
   document.removeEventListener('keydown', modalEscClickHandler);
 };
 
+document.createElement('picture');
+
 try {
   storage = localStorage.getItem('login');
 } catch (err) {
@@ -95,9 +102,9 @@ if (headerToggle) {
 }
 
 if (footerInfoToggles) {
-  footerInfoToggles.forEach(function (item) {
-    item.addEventListener('click', footerInfoClickHandler);
-  });
+  for (var i = 0; i < footerInfoToggles.length; i++) {
+    footerInfoToggles[i].addEventListener('click', footerInfoClickHandler);
+  }
 }
 
 if (openButton) {
@@ -135,3 +142,10 @@ if (closeButton) {
 }
 
 
+if (footerTextCopyright && footerCopyrightContainer) {
+  var paragraph = footerTextCopyright.cloneNode(true);
+
+  if (window.matchMedia(TABLET_MEDIA_QUERY).matches) {
+    footerCopyrightContainer.insertAdjacentElement('beforeend', paragraph);
+  }
+}

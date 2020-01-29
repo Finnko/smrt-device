@@ -3,6 +3,10 @@
   padding: 0 40px;
   margin: 0 auto;
 
+  &--bigger-padding {
+    padding: 0 120px;
+  }
+
   @include respond-below($tablet) {
     padding: 0 25px;
   }

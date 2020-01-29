@@ -1,43 +1,32 @@
 .about {
+  padding-top: 40px;
   padding-bottom: 110px;
-}
-
-.about__wrap {
-  padding: 0 120px;
-}
-
-.about__content {
   padding-left: 185px;
 }
 
-.about__content h2 {
+.about h2 {
   @include heading-large;
   @include text-margin-0;
   margin-bottom: 18px;
 }
 
-.about__content p {
+.about p {
   @include text-margin-0;
+  margin-bottom: 15px;
 
-  &:not(:last-of-type) {
-    margin-bottom: 15px;
+  &:last-of-type {
+    margin-bottom: 35px;
   }
-}
-
-.about__button {
-  margin-top: 35px;
 }
 
 @include respond-below($tablet) {
   .about {
+    padding-top: 30px;
     padding-bottom: 83px;
+    padding-left: 0;
   }
 
-  .about__wrap {
-    padding: 0;
-  }
-
-  .about__content h2 {
+  .about h2 {
     margin-bottom: 25px;
   }
 
@@ -50,10 +39,6 @@
   .about {
     padding-bottom: 65px;
     background-image: none;
-  }
-
-  .about__content {
-    padding-left: 0;
   }
 
   .about__content h2 {

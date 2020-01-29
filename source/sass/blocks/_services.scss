@@ -3,12 +3,9 @@
   background-color: $bg-color-primary;
 }
 
-.services__wrap {
-  padding: 0 120px;
-}
-
-.services__title {
+.services h2 {
   @include heading-large;
+  @include text-margin-0;
   margin-bottom: 47px;
   color: $text-color-inverse;
 }
@@ -16,10 +13,6 @@
 @include respond-below($tablet) {
   .services {
     padding: 53px 0 78px;
-  }
-
-  .services__wrap {
-    padding: 0;
   }
 }
 

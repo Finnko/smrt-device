@@ -6,9 +6,6 @@
 .footer__top {
   padding-top: 65px;
   padding-bottom: 55px;
-}
-
-.footer__top-wrap {
   display: flex;
 }
 
@@ -22,37 +19,27 @@
   margin-top: 54px;
 }
 
-.footer__top-copyright {
+.footer__item-logo p {
   display: none;
 }
 
 .footer__bottom {
-  padding: 0 14px;
+  padding: 14px 0;
   border-top: 1px solid rgba($corduroy, 0.2);
   font-size: 13px;
   line-height: 24px;
   text-transform: uppercase;
 }
 
-.footer__bottom-wrap {
-  display: flex;
-  align-items: center;
-}
-
 .footer__copyright {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  max-width: 460px;
-  width: 100%;
-  margin-right: 142px;
 }
 
-.footer__copyright-text,
-.footer__copyright-info {
-  @include text-margin-0;
-  width: 50%;
+.footer__copyright span + span {
+  margin-left: 72px;
+  margin-right: 142px;
 }
 
 .footer__privacy-policy {
@@ -85,13 +72,14 @@
   }
 }
 
-.footer__develop-info {
+.footer__copyright p {
+  @include text-margin-0;
   margin-left: auto;
   max-width: 220px;
 }
 
 @include respond-below(1120px) {
-  .footer__copyright {
+  .footer__copyright span + span {
     margin-right: 52px;
   }
 }
@@ -100,11 +88,8 @@
   .footer__top {
     padding-top: 19px;
     padding-bottom: 0;
-    overflow: hidden;
-  }
-
-  .footer__top-wrap {
     flex-direction: column;
+    overflow: hidden;
   }
 
   .footer__item-logo {
@@ -125,8 +110,12 @@
     }
   }
 
-  .footer__top-copyright {
-    display: block;
+  .footer__logo {
+    order: 1;
+  }
+
+  .footer__item-logo p {
+    order: 2;
     margin-left: auto;
     font-size: 13px;
     line-height: 24px;
@@ -134,6 +123,7 @@
   }
 
   .footer__social {
+    order: 3;
     margin-top: 0;
     margin-left: auto;
   }
@@ -142,7 +132,7 @@
     padding: 21px 0 24px;
   }
 
-  .footer__copyright {
+  .footer__copyright span {
     display: none;
   }
 }
@@ -165,7 +155,7 @@
     margin-bottom: 26px;
   }
 
-  .footer__top-copyright {
+  .footer__item-logo p {
     margin-left: 0;
     margin-bottom: 32px;
   }
@@ -178,17 +168,17 @@
     padding: 28px 0 26px;
   }
 
-  .footer__bottom-wrap {
+  .footer__copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .footer__privacy-policy {
-    margin-bottom: 21px;
+  .footer__copyright p {
+    margin-left: 0;
   }
 
-  .footer__develop-info {
-    margin-left: 0;
+  .footer__privacy-policy {
+    margin-bottom: 21px;
   }
 }

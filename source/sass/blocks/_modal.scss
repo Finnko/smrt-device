@@ -8,6 +8,26 @@
   transform: translate(-50%, -50%);
   color: $text-color-inverse;
   background-color: $accent-color;
+
+  .form__field {
+    width: 100%;
+    margin-bottom: 30px;
+
+    textarea {
+      height: 105px;
+    }
+  }
+
+  .form__button {
+    max-width: none;
+  }
+
+  .form__checkbox {
+    label {
+      padding-left: 48px;
+      max-width: 340px;
+    }
+  }
 }
 
 .modal__overlay {
@@ -45,13 +65,13 @@
   }
 }
 
-.modal__title {
+.modal h2 {
   @include text-margin-0;
   font-size: 28px;
   line-height: 39px;
 }
 
-.modal__subtitle {
+.modal p {
   @include text-margin-0;
   margin-bottom: 35px;
 }
