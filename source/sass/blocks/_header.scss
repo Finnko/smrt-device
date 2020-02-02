@@ -80,6 +80,12 @@
   margin-left: 49px;
 }
 
+@include respond-below(1050px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+
 @include respond-below($tablet) {
   .header-wrapper {
     background-image: url("../img/promo-bg-tablet@1x.png"), url("../img/header-bg-tablet@1x.jpg");
@@ -113,9 +119,21 @@
     display: none;
   }
 
+  .header__link-icon {
+    &--mail svg {
+      width: 25px;
+      height: 18px;
+    }
+
+    &--phone svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
   .header__contacts-item {
     &:not(:last-child) {
-      margin-right: 42px;
+      margin-right: 32px;
     }
   }
 

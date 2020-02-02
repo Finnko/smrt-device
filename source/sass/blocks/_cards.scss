@@ -1,5 +1,5 @@
 .cards {
-  padding: 88px 0 128px;
+  padding: 51px 0 128px;
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
@@ -82,12 +82,17 @@
 
 @include respond-below($tablet) {
   .cards {
-    padding: 53px 0 78px;
+    padding: 48px 0 76px;
   }
 
   .cards a {
     width: 100%;
     min-height: 256px;
+    padding-top: 42px;
+
+    &:not(:last-child) {
+      margin-bottom: 33px;
+    }
   }
 
   .cards__item {

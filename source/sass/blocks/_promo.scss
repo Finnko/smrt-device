@@ -73,26 +73,28 @@
 @include respond-below($tablet) {
   .promo {
     padding-top: 81px;
-    padding-bottom: 163px;
+    padding-bottom: 164px;
   }
 
   .promo__offer {
-    width: 65%;
+    width: 70%;
     padding-left: 63px;
   }
 
   .promo__wrap {
-    padding-left: 48px;
+    padding-left: 51px;
   }
 
   .promo__slogan {
     font-size: 60px;
     line-height: 70px;
+    margin-bottom: 29px;
   }
 
   .promo p {
     font-size: 18px;
     line-height: 28px;
+    margin-bottom: 56px;
 
     &::before {
       left: -48px;
@@ -102,9 +104,8 @@
   }
 
   .promo__button {
-    max-width: 351px;
-    padding-left: 14px;
-    padding-right: 14px;
+    max-width: 380px;
+    padding: 18px 18px 16px;
   }
 
   .promo__move-link {

@@ -23,6 +23,7 @@
     width: 100%;
     padding: 13px 18px 15px;
     color: $text-color-inverse;
+    border-radius: 0;
     background-color: rgba($text-color-inverse, 0.1);
     transition: box-shadow $transition-duration;
 
@@ -98,6 +99,18 @@
   max-width: calc(51% - 19px);
   margin-bottom: 30px;
   margin-right: 38px;
+}
+
+@include respond-below($tablet) {
+  .form__field {
+    &:last-of-type {
+      margin-bottom: 42px;
+    }
+
+    textarea {
+      height: 160px;
+    }
+  }
 }
 
 @include respond-below($mobile) {

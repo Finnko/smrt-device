@@ -29,17 +29,19 @@
 
 @include respond-below($tablet) {
   .about {
-    padding-top: 30px;
-    padding-bottom: 83px;
-    padding-left: 0;
+    padding-top: 28px;
+    padding-bottom: 85px;
+    padding-left: 187px;
+    background-size: 182px 361px;
+    background-position: -30px 26px;
   }
 
   .about h2 {
     margin-bottom: 25px;
   }
 
-  .about__button {
-    margin-top: 50px;
+  .about p span {
+    display: none;
   }
 }
 
@@ -47,6 +49,7 @@
   .about {
     padding-bottom: 65px;
     background-image: none;
+    padding-left: 0;
   }
 
   .about__content h2 {

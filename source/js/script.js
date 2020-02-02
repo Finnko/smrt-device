@@ -7,8 +7,10 @@ var TABLET_MEDIA_QUERY = '(max-width: 1023px)';
 var pageHeader = document.querySelector('.page-header');
 var headerToggle = document.querySelector('.page-header__toggle');
 var footerInfoToggles = document.querySelectorAll('.contacts h5');
-var footerTextCopyright = document.querySelector('.js-text-copyright');
 var footerCopyrightContainer = document.querySelector('.footer__item-logo');
+var footerLogo = footerCopyrightContainer.querySelector('.footer__logo');
+var footerSocial = footerCopyrightContainer.querySelector('.footer__social');
+var footerTextCopyright = document.querySelector('.js-text-copyright');
 var modalDialog = document.querySelector('.modal');
 var overlay = modalDialog.querySelector('.modal__overlay');
 var openButton = document.querySelector('.header__button');
@@ -140,10 +142,15 @@ if (closeButton) {
 }
 
 
-if (footerTextCopyright && footerCopyrightContainer) {
+if (footerTextCopyright && footerCopyrightContainer && footerLogo && footerSocial) {
   var paragraph = footerTextCopyright.cloneNode(true);
+  var fragment = document.createDocumentFragment();
 
   if (window.matchMedia(TABLET_MEDIA_QUERY).matches) {
-    footerCopyrightContainer.insertAdjacentElement('beforeend', paragraph);
+    fragment.appendChild(footerLogo);
+    fragment.appendChild(paragraph);
+    fragment.appendChild(footerSocial);
+
+    footerCopyrightContainer.appendChild(fragment);
   }
 }

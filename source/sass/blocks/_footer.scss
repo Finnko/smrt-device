@@ -16,6 +16,7 @@
 }
 
 .footer__logo {
+  display: inline-flex;
   margin-bottom: 47px;
 }
 
@@ -97,8 +98,9 @@
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding-bottom: 26px;
+    padding-bottom: 19px;
 
     &::after {
       position: absolute;
@@ -115,18 +117,13 @@
     margin-bottom: 0;
   }
 
-  .footer__item-logo p {
-    margin-left: auto;
+  .footer__item-logo span {
     font-size: 13px;
     line-height: 24px;
     text-transform: uppercase;
   }
 
-  .footer__social {
-    margin-left: auto;
-  }
-
-  .footer__bottom {
+  .footer__copyright p {
     padding: 21px 0 24px;
   }
 

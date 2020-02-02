@@ -9,3 +9,12 @@
   background-position: 58% 48%, 108% 42%, -12% 115%, 5% 5%;
   background-size: 559px 486px, 340px, 580px, 340px;
 }
+
+@include respond-below($tablet) {
+  .about-company {
+    background-repeat: no-repeat;
+    background-size: 480px;
+    background-image: url("../img/about-center-triangle.svg");
+    background-position: 169% 46%;
+  }
+}

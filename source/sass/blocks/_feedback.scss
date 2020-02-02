@@ -38,8 +38,16 @@
     background-image: none;
   }
 
+  .feedback h2 {
+    margin-bottom: 16px;
+  }
+
+  .feedback p {
+    margin-bottom: 53px;
+  }
+
   .feedback__content {
-    padding: 83px 65px 73px;
+    padding: 79px 65px;
     width: 100%;
   }
 }

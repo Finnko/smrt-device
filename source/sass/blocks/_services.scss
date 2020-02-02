@@ -5,12 +5,18 @@
 .services h2 {
   @include heading-large;
   @include text-margin-0;
-  margin-bottom: 51px;
+  padding-top: 88px;
   color: $text-color-inverse;
 }
 
+@include respond-below($tablet) {
+  .services h2 {
+    padding-top: 50px;
+  }
+}
+
 @include respond-below($mobile) {
-  .services__title {
+  .services h2 {
     margin-bottom: 37px;
   }
 }
