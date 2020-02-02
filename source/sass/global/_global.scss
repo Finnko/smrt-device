@@ -14,8 +14,10 @@ body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-width: 320px;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
   font-family: $default-font;
@@ -32,12 +34,6 @@ img {
 
 a {
   transition: color $transition-duration, border $transition-duration;
-}
-
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 }
 
 .main {

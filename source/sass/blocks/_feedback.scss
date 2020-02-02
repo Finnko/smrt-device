@@ -1,5 +1,4 @@
 .feedback {
-  padding: 91px 0 81px;
   background-color: $accent-color;
   background-image: url("../img/plane-desktop@1x.png"), url("../img/feedback-big-triangles.svg");
   background-repeat: no-repeat, no-repeat;
@@ -13,6 +12,7 @@
 
 .feedback__content {
   margin-left: auto;
+  padding: 91px 0 81px;
   width: calc(50% - 15px);
   color: $text-color-inverse;
 }
@@ -35,23 +35,18 @@
 
 @include respond-below($tablet) {
   .feedback {
-    padding: 83px 0 73px;
     background-image: none;
   }
 
   .feedback__content {
-    padding: 0 65px;
+    padding: 83px 65px 73px;
     width: 100%;
   }
 }
 
 @include respond-below($mobile) {
-  .feedback {
-    padding: 33px 0 41px;
-  }
-
   .feedback__content {
-    padding: 0;
+    padding: 33px 0 41px;
   }
 
   .feedback h2 {

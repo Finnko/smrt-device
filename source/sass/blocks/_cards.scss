@@ -1,18 +1,51 @@
 .cards {
-  @include list-resetted;
+  padding: 88px 0 128px;
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.cards li {
+.cards a {
+  position: relative;
+  display: block;
   width: calc(100% / 3 - 30px);
-  margin: 15px;
   min-height: 620px;
+  margin: 15px;
+  padding: 52px 45px;
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: $text-color-inverse;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba($text-color, 0.3);
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $accent-color;
+    background-image: url("../img/arrow-right.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 6px 9px;
+    transition: background-color $transition-duration, opacity $transition-duration;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: rgba($accent-color, 0.8);
+  }
+
+  &:active::after {
+    background-color: rgba($accent-color, 0.6);
+    opacity: 0.6;
+  }
 }
 
 .cards__item {
@@ -41,43 +74,6 @@
   }
 }
 
-.cards a {
-  position: relative;
-  display: block;
-  height: 100%;
-  padding: 52px 45px;
-  font-family: $secondary-font;
-  font-size: 20px;
-  line-height: 30px;
-  text-decoration: none;
-  color: $text-color-inverse;
-
-  &::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    width: 63px;
-    height: 63px;
-    background-color: $accent-color;
-    background-image: url("../img/arrow-right.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 6px 9px;
-    transition: background-color $transition-duration, opacity $transition-duration;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: rgba($accent-color, 0.8);
-  }
-
-  &:active::after {
-    background-color: rgba($accent-color, 0.6);
-    opacity: 0.6;
-  }
-}
-
 .cards h4 {
   @include text-margin-0;
   max-width: 170px;
@@ -85,7 +81,11 @@
 }
 
 @include respond-below($tablet) {
-  .cards li {
+  .cards {
+    padding: 53px 0 78px;
+  }
+
+  .cards a {
     width: 100%;
     min-height: 256px;
   }
@@ -118,6 +118,10 @@
 }
 
 @include respond-below($mobile) {
+  .cards {
+    padding: 53px 0 64px;
+  }
+
   .cards__item {
     &--production {
       background-image: url("../img/service-item-1-mobile@1x.png");

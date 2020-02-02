@@ -2,7 +2,6 @@
 
 var ESC_KEYCODE = 27;
 var ENTER_KEYCODE = 13;
-var SCROLL_DURATION = 1500;
 var TABLET_MEDIA_QUERY = '(max-width: 1023px)';
 
 var pageHeader = document.querySelector('.page-header');
@@ -18,7 +17,6 @@ var form = modalDialog.querySelector('.modal__form');
 var login = form.querySelector('#user-name1');
 var phone = form.querySelector('#user-phone1');
 var message = form.querySelector('#user-message1');
-
 
 var isStorageSupport = true;
 var storage = '';

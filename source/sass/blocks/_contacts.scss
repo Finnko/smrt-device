@@ -179,21 +179,6 @@
     }
   }
 
-  .contacts__item {
-    width: 100%;
-
-    &--open {
-      .contacts__body {
-        display: block;
-      }
-
-      h5::after {
-        background-image: url("../img/minus.svg");
-        background-size: 16px 3px;
-      }
-    }
-  }
-
   .contacts__address {
     width: 70%;
   }
