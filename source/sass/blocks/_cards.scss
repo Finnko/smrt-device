@@ -118,6 +118,15 @@
 }
 
 @include respond-below($mobile) {
+  .cards a {
+    padding-top: 20px;
+    padding-left: 33px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
   .cards__item {
     &--production {
       background-image: url("../img/service-item-1-mobile@1x.png");

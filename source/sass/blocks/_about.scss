@@ -52,6 +52,18 @@
     padding-left: 0;
   }
 
+  .about h2 {
+    margin-bottom: 21px;
+  }
+
+  .about p {
+    margin-bottom: 39px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+
   .about__content h2 {
     margin-bottom: 18px;
   }

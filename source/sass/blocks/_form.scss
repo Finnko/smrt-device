@@ -120,6 +120,10 @@
     &:last-of-type {
       margin-bottom: 30px;
     }
+
+    textarea {
+      height: 104px;
+    }
   }
 
   .form__button {

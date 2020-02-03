@@ -54,11 +54,11 @@
 
 @include respond-below($mobile) {
   .feedback__content {
-    padding: 33px 0 41px;
+    padding: 121px 0 44px;
   }
 
   .feedback h2 {
-    margin-bottom: 15px;
+    display: none;
   }
 
   .feedback p {
