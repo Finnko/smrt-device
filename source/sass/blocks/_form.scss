@@ -97,7 +97,6 @@
 
 .form__button {
   max-width: calc(51% - 19px);
-  margin-bottom: 30px;
   margin-right: 38px;
 }
 
@@ -126,6 +125,7 @@
   .form__button {
     max-width: none;
     margin-right: 0;
+    margin-bottom: 30px;
   }
 
   .form__checkbox label {

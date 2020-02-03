@@ -33,14 +33,17 @@
 }
 
 .footer__copyright {
+  padding: 14px 40px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
+.footer__copyright span:first-of-type {
+  margin-right: 74px;
+}
+
 .footer__copyright span + span {
-  padding: 14px 0;
-  margin-left: 74px;
   margin-right: 142px;
 }
 
@@ -123,8 +126,8 @@
     text-transform: uppercase;
   }
 
-  .footer__copyright p {
-    padding: 21px 0 24px;
+  .footer__copyright {
+    padding: 21px 25px 24px;
   }
 
   .footer__copyright span {
@@ -159,14 +162,12 @@
     margin-left: 0;
   }
 
-  .footer__bottom {
-    padding: 28px 0 26px;
-  }
 
   .footer__copyright {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 28px 0 26px;
   }
 
   .footer__copyright p {

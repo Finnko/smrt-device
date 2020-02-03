@@ -2,20 +2,32 @@
   background-color: $bg-color-primary;
 }
 
+.services__container {
+  padding: 88px 160px 128px;
+}
+
 .services h2 {
   @include heading-large;
   @include text-margin-0;
-  padding-top: 88px;
+  margin-bottom: 51px;
   color: $text-color-inverse;
 }
 
 @include respond-below($tablet) {
+  .services__container {
+    padding: 50px 25px 76px;
+  }
+
   .services h2 {
-    padding-top: 50px;
+    margin-bottom: 48px;
   }
 }
 
 @include respond-below($mobile) {
+  .services__container {
+    padding: 53px 15px 64px;
+  }
+
   .services h2 {
     margin-bottom: 37px;
   }

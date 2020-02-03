@@ -1,5 +1,4 @@
 .cards {
-  padding: 51px 0 128px;
   margin: -15px;
   display: flex;
   flex-wrap: wrap;
@@ -81,10 +80,6 @@
 }
 
 @include respond-below($tablet) {
-  .cards {
-    padding: 48px 0 76px;
-  }
-
   .cards a {
     width: 100%;
     min-height: 256px;
@@ -123,10 +118,6 @@
 }
 
 @include respond-below($mobile) {
-  .cards {
-    padding: 53px 0 64px;
-  }
-
   .cards__item {
     &--production {
       background-image: url("../img/service-item-1-mobile@1x.png");
