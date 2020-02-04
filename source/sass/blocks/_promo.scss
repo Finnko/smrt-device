@@ -43,6 +43,10 @@
   }
 }
 
+.promo__button span {
+  pointer-events: none;
+}
+
 .promo__button-text {
   &--mobile {
     display: none;

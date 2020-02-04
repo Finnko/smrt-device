@@ -39,3 +39,8 @@ a {
 .main {
   flex: 1 0 auto;
 }
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}

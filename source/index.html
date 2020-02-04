@@ -70,7 +70,7 @@
         <p>
           производство и монтаж, поставка комплектующих, блоков и модулей
         </p>
-        <a class="promo__button button button--secondary" href="#feedback">
+        <a class="promo__button button button--secondary js-scroll-to" href="#feedback">
         <span class="promo__button-text">
           Получить бесплатную консультацию
         </span>
@@ -79,7 +79,7 @@
         </span>
         </a>
       </div>
-      <a class="promo__move-link" href="#advantages">Скролл вниз</a>
+      <a class="promo__move-link js-scroll-to" href="#advantages">Скролл вниз</a>
     </div>
   </section>
 </div>
@@ -206,7 +206,13 @@
                 <label for="user-name" aria-label="Введите имя"></label>
               </div>
               <div class="form__field">
-                <input id="user-phone" type="tel" placeholder="Телефон" data-inputmask="'mask': '+7(___)-___-__-__'" required>
+                <input id="user-phone"
+                       type="tel"
+                       placeholder="Телефон"
+                       name="phone"
+                       title="10-значный номер"
+                       required
+                >
                 <label for="user-phone" aria-label="Введите телефон"></label>
               </div>
               <div class="form__field form__field--full-width">
@@ -369,7 +375,7 @@
         </label>
       </div>
       <div class="form__field">
-        <input id="user-phone1" type="tel" placeholder="Телефон" data-inputmask="'mask': '+7(___)-___-__-__'" required>
+        <input id="user-phone1" name="phone" type="tel" placeholder="Телефон" title="10-значный номер" required>
         <label for="user-phone1">
           <span class="visually-hidden">Введите телефон</span>
         </label>
@@ -393,7 +399,6 @@
   </div>
   <div class="modal__overlay"></div>
 </section>
-<script src="js/vendors.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

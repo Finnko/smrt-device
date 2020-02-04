@@ -32,21 +32,21 @@
     color: $text-color-inverse;
     background-color: $accent-color;
 
-    .advantages__item p {
+    p {
       color: $text-color-inverse;
     }
   }
+}
+
+.advantages__item p {
+  @include text-margin-0;
+  color: $text-color;
 }
 
 .advantages__item h3 {
   @include heading-medium;
   @include text-margin-0;
   margin-bottom: 15px;
-}
-
-.advantages__item p {
-  @include text-margin-0;
-  color: $text-color;
 }
 
 .advantages__icon {
