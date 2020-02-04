@@ -218,7 +218,7 @@
                   Задать вопрос
                 </button>
                 <div class="form__checkbox">
-                  <input class="visually-hidden" type="checkbox" id="consent" required>
+                  <input type="checkbox" id="consent" required>
                   <label for="consent">
                     Я согласен на обработку персональных данных
                   </label>
@@ -366,28 +366,22 @@
     <form class="modal__form form" action="#">
       <div class="form__field">
         <input id="user-name1" type="text" placeholder="Имя" required>
-        <label for="user-name1">
-          <span class="visually-hidden">Введите имя</span>
-        </label>
+        <label for="user-name1" aria-label="Введите ваше имя"></label>
       </div>
       <div class="form__field">
         <input id="user-phone1" name="phone" type="tel" placeholder="Телефон" title="10-значный номер" required>
-        <label for="user-phone1">
-          <span class="visually-hidden">Введите телефон</span>
-        </label>
+        <label for="user-phone1" aria-label="Введите телефон"></label>
       </div>
       <div class="form__field form__field--full-width">
         <textarea id="user-message1" cols="30" rows="10" placeholder="Ваш вопрос" required></textarea>
-        <label for="user-message1">
-          <span class="visually-hidden">Введите сообщение</span>
-        </label>
+        <label for="user-message1" aria-label="Введите сообщение"></label>
       </div>
       <div class="form__checkbox-wrap">
         <button class="form__button button button--primary" type="submit">
           Задать вопрос
         </button>
         <div class="form__checkbox">
-          <input class="visually-hidden" type="checkbox" id="consent1" required>
+          <input type="checkbox" id="consent1" required>
           <label for="consent1">
             Я согласен на обработку персональных данных
           </label>
