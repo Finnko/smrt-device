@@ -49,17 +49,20 @@
   }
 }
 
-.form__checkbox {
+.form__checkbox-wrap {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   width: 100%;
+}
+
+.form__checkbox {
+  max-width: calc(49% - 19px);
 
   label {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    max-width: calc(49% - 19px);
     padding-left: 32px;
     font-size: 14px;
     line-height: 16px;

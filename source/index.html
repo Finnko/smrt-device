@@ -213,14 +213,16 @@
                 <textarea id="user-message" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                 <label for="user-message" aria-label="Введите сообщение"></label>
               </div>
-              <div class="form__checkbox">
+              <div class="form__checkbox-wrap">
                 <button class="form__button button button--primary" type="submit">
                   Задать вопрос
                 </button>
-                <label>
-                  <input class="visually-hidden" type="checkbox" required>
-                  Я согласен на обработку персональных данных
-                </label>
+                <div class="form__checkbox">
+                  <input class="visually-hidden" type="checkbox" id="consent" required>
+                  <label for="consent">
+                    Я согласен на обработку персональных данных
+                  </label>
+                </div>
               </div>
             </form>
           </div>
@@ -380,14 +382,16 @@
           <span class="visually-hidden">Введите сообщение</span>
         </label>
       </div>
-      <div class="form__checkbox">
+      <div class="form__checkbox-wrap">
         <button class="form__button button button--primary" type="submit">
           Задать вопрос
         </button>
-        <label>
-          <input class="visually-hidden" type="checkbox" required>
-          Я согласен на обработку персональных данных
-        </label>
+        <div class="form__checkbox">
+          <input class="visually-hidden" type="checkbox" id="consent1" required>
+          <label for="consent1">
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
       </div>
     </form>
   </div>

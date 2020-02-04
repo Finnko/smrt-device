@@ -20,13 +20,16 @@
 
   .form__button {
     max-width: none;
+    margin-right: 0;
     margin-bottom: 30px;
   }
 
   .form__checkbox {
+    max-width: none;
+
     label {
       padding-left: 48px;
-      max-width: 340px;
+      max-width: 360px;
     }
   }
 }
