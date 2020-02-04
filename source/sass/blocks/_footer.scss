@@ -10,9 +10,7 @@
 }
 
 .footer__item-logo {
-  width: 216px;
-  flex-shrink: 0;
-  margin-right: calc(10% - 1px);
+  width: 240px;
 }
 
 .footer__logo {
@@ -121,7 +119,6 @@
   }
 
   .footer__item-logo span {
-    margin-bottom: 31px;
     font-size: 13px;
     line-height: 24px;
     text-transform: uppercase;
@@ -157,6 +154,10 @@
   .footer__item-logo p {
     margin-left: 0;
     margin-bottom: 32px;
+  }
+
+  .footer__item-logo span {
+    margin-bottom: 31px;
   }
 
   .footer__social {

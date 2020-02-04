@@ -40,6 +40,10 @@
     &:focus {
       box-shadow: 0 0 0 1px $text-color-inverse;
     }
+
+    &:invalid {
+      box-shadow: none;
+    }
   }
 
   textarea {
@@ -115,6 +119,10 @@
 .form__button {
   max-width: calc(51% - 19px);
   margin-right: 38px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 @include respond-below($tablet) {
@@ -149,7 +157,11 @@
     margin-bottom: 30px;
   }
 
-  .form__checkbox label {
-    max-width: 340px;
+  .form__checkbox {
+    max-width: none;
+
+    label {
+      max-width: 340px;
+    }
   }
 }
