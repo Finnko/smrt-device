@@ -1,9 +1,10 @@
 .about {
-  padding-top: 33px;
-  padding-bottom: 110px;
-  padding-left: 183px;
+  padding: 33px 15px 110px 208px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 405px;
   background-repeat: no-repeat;
-  background-position: -28px 38px;
+  background-position: -13px 38px;
   background-image: url("../img/year-desktop@1x.png");
   background-size: 164px 317px;
 
@@ -29,11 +30,9 @@
 
 @include respond-below($tablet) {
   .about {
-    padding-top: 28px;
-    padding-bottom: 85px;
-    padding-left: 187px;
+    padding: 28px 25px 85px 212px;
     background-size: 182px 361px;
-    background-position: -30px 26px;
+    background-position: -5px 26px;
   }
 
   .about h2 {
@@ -47,9 +46,8 @@
 
 @include respond-below($mobile) {
   .about {
-    padding-bottom: 65px;
+    padding: 10px 15px 65px;
     background-image: none;
-    padding-left: 0;
   }
 
   .about h2 {
